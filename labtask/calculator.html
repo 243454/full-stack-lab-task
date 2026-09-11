@@ -5,54 +5,29 @@
 
     <style>
         body {
-            background-color: lightgray;
+            text-align: center;
             font-family: Arial;
         }
 
         .calculator {
-            width: 300px;
+            width: 250px;
             margin: 100px auto;
             padding: 20px;
-            background-color: black;
-            border-radius: 10px;
+            background: lightgray;
         }
 
-        .display {
-            width: 100%;
-            height: 50px;
-            font-size: 25px;
-            text-align: right;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-        }
-
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
+        input {
+            width: 220px;
+            height: 40px;
+            font-size: 20px;
+            margin-bottom: 10px;
         }
 
         button {
-            height: 50px;
-            font-size: 20px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .operator {
-            background-color: orange;
-            color: white;
-        }
-
-        .equal {
-            background-color: green;
-            color: white;
-        }
-
-        .clear {
-            background-color: red;
-            color: white;
-            grid-column: span 4;
+            width: 50px;
+            height: 40px;
+            margin: 3px;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -61,33 +36,35 @@
 
     <div class="calculator">
 
-        <input type="text" class="display" value="0">
+        <input type="text" value="0">
 
-        <div class="buttons">
+        <br>
 
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">+</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>+</button>
 
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">-</button>
+        <br>
 
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">×</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
 
-            <button>0</button>
-            <button>.</button>
-            <button class="equal">=</button>
-            <button class="operator">÷</button>
+        <br>
 
-            <button class="clear">Clear</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>*</button>
 
-        </div>
+        <br>
+
+        <button>0</button>
+        <button>/</button>
+        <button>=</button>
+        <button>C</button>
 
     </div>
 
